@@ -129,22 +129,23 @@
     <script>
         // ===== CONFIGURE SEUS PRÊMIOS AQUI =====
         const sectors = [
-            { color: "#FE2A12", text: "#000000", label: "Brindes" },
-            { color: "#FE7A0B", text: "#000000", label: "Test drive premium" },
-            { color: "#F0BE00", text: "#000000", label: "Perdeu a vez" },
-            { color: "#FE2A12", text: "#000000", label: "Brindes" },
-            { color: "#FE7A0B", text: "#000000", label: "Tente outra vez" },
-            { color: "#F0BE00", text: "#000000", label: "Vídeo com o JaEra" },
-            { color: "#FE2A12", text: "#000000", label: "2000 de bônus na compra" },
+            { color: "#FE2A12", text: "#000000", label: "Perdeu a vez" },
             { color: "#FE7A0B", text: "#000000", label: "Brindes" },
-            { color: "#F0BE00", text: "#000000", label: "1000 de bônus na compra" },
-            { color: "#FE2A12", text: "#000000", label: "Tente outra vez" },
-            { color: "#FE7A0B", text: "#000000", label: "Perdeu a vez" },
-            { color: "#F0BE00", text: "#000000", label: "2000 de bônus na compra" },
-            { color: "#FE2A12", text: "#000000", label: "1000 de bônus na compra" },
-            { color: "#FE7A0B", text: "#000000", label: "Vídeo com o JaEra" },
+            { color: "#F0BE00", text: "#000000", label: "Test Drive Premium" },
+            { color: "#FE2A12", text: "#000000", label: "Perdeu a vez" },
+            { color: "#FE7A0B", text: "#000000", label: "Brindes" },
             { color: "#F0BE00", text: "#000000", label: "Tente outra vez" },
-            { color: "#FE7A0B", text: "#000000", label: "Perdeu a vez" },
+            { color: "#FE2A12", text: "#000000", label: "Vídeo com o Já Eraaa nos stories!" },
+            { color: "#FE7A0B", text: "#000000", label: "R$2000 de bônus na compra" },
+            { color: "#F0BE00", text: "#000000", label: "Brindes" },
+            { color: "#FE2A12", text: "#000000", label: "R$1000 de bônus na compra" },
+            { color: "#FE7A0B", text: "#000000", label: "Tente outra vez" },
+            { color: "#F0BE00", text: "#000000", label: "Perdeu a vez" },
+            { color: "#FE2A12", text: "#000000", label: "R$2000 de bônus na compra" },
+            { color: "#FE7A0B", text: "#000000", label: "R$1000 de bônus na compra" },
+            { color: "#F0BE00", text: "#000000", label: "Vídeo com o Já Eraaa nos stories!" },
+            { color: "#FE2A12", text: "#000000", label: "Tente outra vez" },
+            { color: "#F0BE00", text: "#000000", label: "Perdeu a vez" },
         ];
         // ========================================
 
@@ -176,14 +177,6 @@
             ctx.arc(rad, rad, rad, ang, ang + arc);
             ctx.lineTo(rad, rad);
             ctx.fill();
-
-            // Linhas divisórias
-            ctx.beginPath();
-            ctx.strokeStyle = sector.color === "#FFC605" ? "#FFC605" : "#FFC605";
-            ctx.lineWidth = 4;
-            ctx.moveTo(rad, rad);
-            ctx.lineTo(rad + rad * Math.cos(ang), rad + rad * Math.sin(ang));
-            ctx.stroke();
 
             // Texto
             ctx.translate(rad, rad);
